@@ -1,0 +1,5 @@
+.messages-block{
+    grid-area: messagesBlock;
+    background-color: green;
+}
+
