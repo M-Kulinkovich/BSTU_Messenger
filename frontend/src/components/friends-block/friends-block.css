@@ -1,5 +1,7 @@
 .friends-block{
     grid-area: friendsBlock;
-    background-color: purple;
+}
+.friends{
+    font-family: '8BITWONDERNominal';
 }
 

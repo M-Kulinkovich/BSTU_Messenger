@@ -1,17 +1,28 @@
 import React, { Component } from "react";
 import "./message-block.css";
-export default class MessagesBlock extends Component {
+import MessageItem from "./message-item/message-item";
+import { connect } from "react-redux";
+import * as selectActions from "../../store/actions/message-actions";
+
+class MessagesBlock extends Component {
   render() {
+
     return (
       <div className="messages-block">
         <ul>
-          <li>message one</li>
-          <li>message two</li>
-          <li>message three</li>
-          <li>message four</li>
-          <li>message five</li>
+        <MessageItem/>
         </ul>
+        <input type='text' className="send-message" placeholder = 'message'/>
+        <button className='send-btn'>send</button>
       </div>
     );
   }
 }
+const mapStateToProps = state => {
+  const { message } = state.messages;
+  return {
+    message
+  };
+};
+export default connect(mapStateToProps, selectActions)(MessagesBlock);
+

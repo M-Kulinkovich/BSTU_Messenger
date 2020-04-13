@@ -4,6 +4,7 @@ import AppHeader from "../app-header";
 import FriedsBlock from "../friends-block";
 import MessageBlock from "../message-block";
 
+
 const App = () => {
   return (
     <div className="content">

@@ -5,7 +5,7 @@ export default class FriendsBlock extends Component {
         return <div className="friends-block">
             <input type="text" placeHolder="Форма для поиска друзей" />
             <button> Поиск</button>
-            <ul>
+            <ul className="friends">
                 <li>
                     Влад
                 </li>
